@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <title>bioSite</title>
+    <meta name="description" content="bioSite Assignment" />
+    <meta http-equiv="author" content ="Chris Gorham" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="biosite.css" type="text/css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 5;
+    }
+    
+    /* Style the header */
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #f7a2fa;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #de92e0;
+      color: black;
+    }
+    
+    /* Create three unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 20px;
+    }
+    
+    /* Left and right column */
+    .column.side {
+      width: 25%;
+    }
+    
+    /* Middle column */
+    .column.middle {
+      width: 50%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column.side, .column.middle {
+        width: 100%;
+      }
+    }
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="header">
+        <center><img src="logo.png" width="50%" height="50%"></center>
+        <h1>Welcome to a webpage about Megan Gorham</h1>
+      </div>
+
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Megan</a>
+        <a href="hobbies.html">Megan's Hobbies</a>
+        </div>
+
+        <div class="row">
+            <div class="column side">
+              <h2>Find Me Here:</h2>
+              <h3><a href="etsy.html">Etsy</a></h3>
+              <h3><a href="instagram.html">Instagram</a></h3>
+            </div>
+            
+            <div class="column middle">
+                <center><img src="example1.jpeg" width="25%" height="25%"><img src="example2.jpeg" width="25%" height="25%"></center>
+              <h2>Megan will be at the Eastern Shore Fair in Salisbury on December 5, 2022!</h2><br>
+                <h2><u>Reviews:</u></h2>
+              <p>Mark Bellos</p>
+              <p><i>Megan created a great doll for my daughter and she sleeps with it every night.  I highly recommend her!</i>
+            </div>
+            
+            <div class="column side">
+              <p>Thanks for visiting</p>
+              <img src="subject.jpeg" width="30%" height="30%">
+            </div>
+          </div>
+<hr>
+<center><p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.  All images are copyright of Megan Gorham.  2022.</p></center>
+</body>
+</html>
