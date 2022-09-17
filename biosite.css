@@ -33,5 +33,13 @@ a:visited {
 }
 
 a:hover {
-    color: #c581c7;;
+    color: #c581c7;
+}
+
+#disclaimer {
+    text-align: center;
+}
+
+#examples {
+    text-align: center;
 }

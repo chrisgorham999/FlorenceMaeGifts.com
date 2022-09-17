@@ -22,7 +22,7 @@
     
     /* Style the header */
     .header {
-      background-color: #f1f1f1;
+      background-color: #ffffff;
       padding: 20px;
       text-align: center;
     }
@@ -31,6 +31,7 @@
     .topnav {
       overflow: hidden;
       background-color: #f7a2fa;
+      font-family: 'Lora', serif;
     }
     
     /* Style the topnav links */
@@ -39,7 +40,7 @@
       display: block;
       color: #000000;
       text-align: center;
-      padding: 14px 16px;
+      padding: 16px;
       text-decoration: none;
     }
     
@@ -52,17 +53,19 @@
     /* Create three unequal columns that floats next to each other */
     .column {
       float: left;
-      padding: 20px;
+      padding: 10px;
     }
     
     /* Left and right column */
     .column.side {
-      width: 25%;
+      width: 20%;
+      padding: 10px;
     }
     
     /* Middle column */
     .column.middle {
-      width: 50%;
+      width: 60%;
+      padding: 10px;
     }
     
     /* Clear floats after the columns */
@@ -86,8 +89,7 @@
 </head>
 <body>
     <div class="header">
-        <center><img src="logo.png" width="50%" height="50%"></center>
-        <h1>Welcome to a webpage about Megan Gorham</h1>
+        <img src="logo.png" width="50%" height="50%">
       </div>
 
       <div class="topnav">
@@ -100,13 +102,13 @@
             <div class="column side">
               <h2>Find Me Here:</h2>
               <h3><a href="etsy.html">Etsy</a></h3>
-              <h3><a href="instagram.html">Instagram</a></h3>
+              <h3><a href="https://www.instagram.com/amigurumixadventures/" target="resource_window">Instagram</a></h3>
             </div>
             
             <div class="column middle">
-                <center><img src="example1.jpeg" width="25%" height="25%"><img src="example2.jpeg" width="25%" height="25%"></center>
+                <div id="examples"><img src="example1.jpeg" width="25%" height="25%"><img src="example2.jpeg" width="25%" height="25%"></div>
               <h2>Megan will be at the Eastern Shore Fair in Salisbury on December 5, 2022!</h2><br>
-                <h2><u>Reviews:</u></h2>
+                <h3><u>Reviews:</u></h3>
               <p>Mark Bellos</p>
               <p><i>Megan created a great doll for my daughter and she sleeps with it every night.  I highly recommend her!</i>
             </div>
@@ -117,6 +119,9 @@
             </div>
           </div>
 <hr>
-<center><p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.  All images are copyright of Megan Gorham.  2022.</p></center>
+<div id="disclaimer">
+  <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.  All images are copyright of Megan Gorham.  2022.</p>
+</div>
+
 </body>
 </html>
