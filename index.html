@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <title>bioSite</title>
-    <meta name="description" content="bioSite Assignment" />
+    <title>Florence Mae Gifts</title>
+    <meta name="description" content="Florence Mae Gifts" />
     <meta http-equiv="author" content ="Chris Gorham" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,14 @@
     
     body {
       margin: 5;
+      max-width: 1200px;
+      background: #FFFFFF;
+      padding: 10px;
     }
     
     /* Style the header */
     .header {
       background-color: #ffffff;
-      padding: 20px;
       text-align: center;
     }
     
@@ -50,22 +52,23 @@
       color: black;
     }
     
-    /* Create three unequal columns that floats next to each other */
-    .column {
-      float: left;
+   /* left column */
+   .leftcolumn {
+      float:left;
+      width: 70%;
+      margin-top: 20px;
+      background-color: #f1f1f1;
       padding: 10px;
     }
-    
-    /* Left and right column */
-    .column.side {
-      width: 20%;
-      padding: 10px;
-    }
-    
-    /* Middle column */
-    .column.middle {
-      width: 60%;
-      padding: 10px;
+
+    /* right column */
+    .rightcolumn {
+      float:left;
+      width: 25%;
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-left: 20px;
+      background-color: #f1f1f1;
     }
     
     /* Clear floats after the columns */
@@ -89,31 +92,33 @@
 </head>
 <body>
     <div class="header">
-        <img src="logo.png" width="50%" height="50%">
+        <img src="logo.png" width="70%" height="70%">
       </div>
 
       <div class="topnav">
         <a href="index.html">Home</a>
         <a href="about.html">About Megan</a>
-        <a href="hobbies.html">Megan's Hobbies</a>
+        <a href="https://www.instagram.com/amigurumixadventures/" style="float:right" target="resource window">Instagram</a>
+        <a href="etsy.html" style="float:right">Etsy</a>
+        <a href="reviews.html">Reviews</A>
+        <a href="request.html">Request Custom Piece</a>
+        <a href="disclaimers.html">Disclaimers</a>
         </div>
 
         <div class="row">
-            <div class="column side">
-              <h2>Find Me Here:</h2>
-              <h3><a href="etsy.html">Etsy</a></h3>
-              <h3><a href="https://www.instagram.com/amigurumixadventures/" target="resource_window">Instagram</a></h3>
-            </div>
-            
-            <div class="column middle">
-                <div id="examples"><img src="example1.jpeg" width="25%" height="25%"><img src="example2.jpeg" width="25%" height="25%"></div>
+            <div class="leftcolumn" width="70%">
+                <div id="examples">
+                  <img src="example1.jpeg" width="25%" height="25%">
+                  <img src="example2.jpeg" width="25%" height="25%">
+                  <img src="example4.jpeg" width="25%" height="25%">
+                </div>
               <h2>Megan will be at the Eastern Shore Fair in Salisbury on December 5, 2022!</h2><br>
                 <h3><u>Reviews:</u></h3>
               <p>Mark Bellos</p>
               <p><i>Megan created a great doll for my daughter and she sleeps with it every night.  I highly recommend her!</i>
             </div>
             
-            <div class="column side">
+            <div class="rightcolumn" width="30%">
               <p>Thanks for visiting</p>
               <img src="subject.jpeg" width="30%" height="30%">
             </div>
@@ -122,6 +127,5 @@
 <div id="disclaimer">
   <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.  All images are copyright of Megan Gorham.  2022.</p>
 </div>
-
 </body>
 </html>
