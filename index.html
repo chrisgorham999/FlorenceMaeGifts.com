@@ -11,7 +11,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+   <style>
     * {
       box-sizing: border-box;
     }
@@ -86,9 +86,6 @@
     }
     </style>
 
-
-
-
 </head>
 <body>
     <div class="header">
@@ -107,18 +104,82 @@
 
         <div class="row">
             <div class="leftcolumn" width="70%">
-                <div id="examples">
-                  <img src="example1.jpeg" width="25%" height="25%">
-                  <img src="example2.jpeg" width="25%" height="25%">
-                  <img src="example4.jpeg" width="25%" height="25%">
-                </div>
-              <h3><i>Megan will be at the Eastern Shore Fair in Salisbury on December 5, 2022!</i></h3><br>
-            <h3>Latest creations:</h3>
-              <div id="newcreations">
-            <img src="new1.png" width="25%" height="25%">
-            <img src="new2.png" width="25%" height="25%">
-            <img src="new3.png" width="25%" height="25%">
-              </div>
+              
+              <!-- Container for the image gallery -->
+              <div class="container">
+
+                 <!-- Full-width images with number text -->
+                  <div class="mySlides">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="example1.jpeg" style="width:40%">
+                   </div>
+
+                  <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="example2.jpeg" style="width:40%">
+                  </div>
+
+                  <div class="mySlides">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="example4.jpeg" style="width:40%">
+                  </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+            <div class="column">
+            <img class="demo cursor" src="example1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Slowking from Pokemon">
+            </div>
+              
+            <div class="column">
+            <img class="demo cursor" src="example2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Gordie the Giraffe">
+            </div>
+
+            <div class="column">
+            <img class="demo cursor" src="example4.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Maurice the Mallard">
+            </div>
+
+            </div>
+          </div>
+
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
             </div>
             
             
@@ -129,7 +190,15 @@
               <p>Contact me at:<br>
                 <a href="mailto:MeganGorham073@gmail.com">MeganGorham073@gmail.com</a>
                 </p>
+                <h3>Megan will be at the Eastern Shore Fair in Salisbury on December 5, 2022!</h3><br>
+                <h3>Her Latest Creation:</h3>
+                <figure>
+                  <img src="new3.png" width="100%" height="100%">
+                  <figcaption>Stitch</figcaption>
+                </figure>
+                
             </div>
+
           </div>
 <hr>
 <div id="disclaimer">
