@@ -124,3 +124,15 @@ a:hover {
     font-family: 'Lora', serif;
     font-size: 16px;
   }
+
+  .requestbox {
+    height: 200px;
+  }
+
+  .requestbox:focus {
+    background-color: lightblue;
+  }
+
+  .countrybtn:focus{
+    background-color: lightblue;
+  }
