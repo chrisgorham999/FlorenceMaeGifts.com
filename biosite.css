@@ -90,3 +90,30 @@ a:hover {
       max-width: 100%;
     }
   }
+
+  input[type=text], select, textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
+
+  .submitbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 75%;
+    opacity: 0.9;
+  }
+
+  .submitbtn:hover {
+    opacity:1;
+  }

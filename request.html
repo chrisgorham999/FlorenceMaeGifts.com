@@ -107,7 +107,41 @@
 
         <div class="row">
             <div class="leftcolumn" width="70%">
-                Request Form Here
+                
+
+             
+              <div class="container">
+                <form action="https://formspree.io/f/xnqrpewl" method="POST" enctype="multipart/form-data" autocomplete="on">
+                  <label for="fname"><p>Your Name:</p></label>
+                  <input type="text" id="name" name="firstname" placeholder="Your name...">
+                  <br>
+                  <label for="email"><p>Your Email:</p></label>
+                  <input type="text" id="email" name="email" placeholder="Your email...">
+                  <br>
+                  <label for="country"><p>Country:</p></label>
+                  <select id="country" name="country">
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="UK">UK</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <br>
+                  <label for="request"><p>Your Request:</p></label>
+                  <textarea id="request" name="request" placeholder="What would you like made?..." style="height:200px">
+                  </textarea>
+                  <br><br> 
+                  <label for="pictures"><p>Add Pictures</p></label>
+                  <input type="file" name="pictures"><br><br>
+                  <input type="submit" value="Submit" class="submitbtn" style="background-color: green">
+              
+                </form>
+              </div>
+
+
+
+
             </div>
             
             <div class="rightcolumn" width="30%">
