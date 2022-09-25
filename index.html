@@ -33,9 +33,91 @@
               
               <div class="row">
                 <div class="column">
-                  <img src="images/example1.jpeg">
-                  <img src="images/example5.png">
-                  <img src="images/example18.png">
+
+                  <img id="example1" src="images/example1.jpeg" alt="Slowking">
+
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+                      </div>
+
+                      <script>
+                      // Get the modal
+                      var modal = document.getElementById("myModal");
+
+                      // Get the image and insert it inside the modal - use its "alt" text as a caption
+                      var img = document.getElementById("example1");
+                      var modalImg = document.getElementById("img01");
+                      var captionText = document.getElementById("caption");
+                      img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                      }
+
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() { 
+                        modal.style.display = "none";
+                      }
+                      </script>
+
+
+                  <img id="example5" src="images/example5.png" alt="Elephant Baby Diaper Kit">
+
+                  <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("example5");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+
+                  <img id="example18" src="images/example18.png" alt="Pink Thing">
+
+                  <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("example18");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+
+
                   <img src="images/example12.png">
                 </div>
                 <div class="column">
@@ -56,10 +138,13 @@
                   <img src="images/example14.png">
                 </div>
               </div>
+              
             
 
             
           </div>  
+
+          
             
             
             <div class="rightcolumn" width="30%">
