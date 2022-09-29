@@ -1,4 +1,5 @@
 html, body {
+  font-family: 'Lora', serif;
     font-size: 16px;
 }
 
@@ -107,7 +108,7 @@ a:hover {
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #f7a2fa;
+    background-color: #ffdeff;
     font-family: 'Lora', serif;
   }
   
@@ -402,11 +403,13 @@ a:hover {
 /* start of CSS for contact form on index.html */
 
 input[type=text], select, textarea {
-  width: 75%;
+  width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  font-family: 'Lora', serif;
+  font-size: 16px;
 }
 
 input[type=text]:focus {
@@ -418,8 +421,9 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  width: 40%;
 }
 
 input[type=submit]:hover {
@@ -433,3 +437,10 @@ input[type=submit]:hover {
 .requestbox:focus {
   background-color: lightblue;
 }
+
+.container {
+  padding: 10px;
+}
+
+.page-margin-right{
+  margin-right:16px!important}

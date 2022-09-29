@@ -1,134 +1,132 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <title>Florence Mae Gifts - Reviews</title>
-    <meta name="description" content="bioSite Assignment" />
-    <meta http-equiv="author" content ="Chris Gorham" />
+    <title>Reviews - FlorenceMaeGifts.com</title>
+    <script src="https://kit.fontawesome.com/aeba1ec76b.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Florence Mae Gifts">
+    <meta http-equiv="author" content ="Chris Gorham">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="biosite.css" type="text/css" rel="stylesheet" />
+    <link href="biosite.css" type="text/css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      margin: 5;
-      max-width: 1200px;
-      background: #FFFFFF;
-      padding: 10px;
-    }
-    
-    /* Style the header */
-    .header {
-      background-color: #ffffff;
-      text-align: center;
-    }
-    
-    /* Style the top navigation bar */
-    .topnav {
-      overflow: hidden;
-      background-color: #f7a2fa;
-      font-family: 'Lora', serif;
-    }
-    
-    /* Style the topnav links */
-    .topnav a {
-      float: left;
-      display: block;
-      color: #000000;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
-    }
-    
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #de92e0;
-      color: black;
-    }
-    
-   /* left column */
-   .leftcolumn {
-      float:left;
-      width: 70%;
-      margin-top: 20px;
-      background-color: #f1f1f1;
-      padding: 10px;
-    }
-
-    /* right column */
-    .rightcolumn {
-      float:left;
-      width: 25%;
-      padding-left: 20px;
-      margin-top: 20px;
-      margin-left: 20px;
-      background-color: #f1f1f1;
-    }
-    
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column.side, .column.middle {
-        width: 100%;
-      }
-    }
-    </style>
-
-
-
 
 </head>
 <body>
     <div class="header">
-        <img src="images/logo.png" width="70%" height="70%">
+        <img src="images/logo.png" width="60%" height="60%">
       </div>
 
       <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Megan</a>
-        <a href="https://www.instagram.com/amigurumixadventures/" style="float:right" target="resource window">Instagram</a>
-        <a href="etsy.html" style="float:right">Etsy</a>
-        <a href="reviews.html">Reviews</A>
-        <a href="request.html">Request Custom Piece</a>
-        <a href="disclaimers.html">Disclaimers</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-palette"></i> About The Artist</a>
+        <a href="https://www.instagram.com/florencemaegifts/" style="float:right" target="resource window"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.etsy.com/shop/florencemaegifts" style="float:right" target="resource window"><i class="fa-brands fa-etsy" alt="etsy"></i>  Etsy</a>
+        <a href="reviews.html"><i class="fa-solid fa-star"></i> Reviews</A>
+        <a href="request.html"><i class="fa-solid fa-keyboard"></i> Request Custom Piece</a>
+        <a href="#contact" style="float:right"><i class="fa-solid fa-message"></i> Contact</a>
+        <a href="disclaimers.html"><i class="fa-solid fa-scale-balanced"></i> Disclaimers</a>
         </div>
 
         <div class="row">
             <div class="leftcolumn" width="70%">
-                Reviews Here
-            </div>
+                  <p><center><img src="images/review.png"></center></p><br>
+                  
+                  <p><i>"Everyone should order something from this gal.  She does amazing work.  Everything she makes is top notch quality.  She made me a doll of me and the guy is still in great condition.  I highly reommend her for any occasion."</i><br>-Jeremy C</p>
+
+                  <p><i>"I recommend you all make an order of your choosing.  You want a present unlike all those store bought gifts? This is the unforgettable gift of a lifetime.  Very well crafted, unique, and hand-made pieces of art.  Please like, share, and support."</i><br>Travis D</p>
+                  
+                  <p><i>"Beautiful work by a beautiful soul."</i><br>Brenna H</p>
+          </div>
+            
             
             <div class="rightcolumn" width="30%">
-              <p>Thanks for visiting!</p>
-              <img src="images/subject.jpeg" width="30%">
-              <p>Contact me at:<br>
-                <a href="mailto:MeganGorham073@gmail.com">MeganGorham073@gmail.com</a>
-                </p>
-                <p><u>Latest Updates:</u></p>
-                <p>Megan will be at the Eastern Shore Fair in Salisbury on December 5, 2022!</p>
-                <p>Her Latest Creation:</p>
-                <figure>
-                  <img src="images/new.png" width="100%" height="100%">
-                  <figcaption>Custom Made Cthulhu</figcaption>
-                </figure>
+                                    <!-- The Modal -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                  
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                      </div>
                 
+                                      <script>
+                                      // Get the modal
+                                      var modal = document.getElementById("myModal");
+                
+                                      // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                      var img = document.getElementById("example1");
+                                      var modalImg = document.getElementById("img01");
+                                      var captionText = document.getElementById("caption");
+                                      img.onclick = function(){
+                                        modal.style.display = "block";
+                                        modalImg.src = this.src;
+                                        captionText.innerHTML = this.alt;
+                                      }
+                
+                                      // Get the <span> element that closes the modal
+                                      var span = document.getElementsByClassName("close")[0];
+                
+                                      // When the user clicks on <span> (x), close the modal
+                                      span.onclick = function() { 
+                                        modal.style.display = "none";
+                                      }
+                                      </script>
+              <p><i class="fa-regular fa-thumbs-up fa-fw page-margin-right"></i>Thanks for visiting!</p>
+              
+              <p><u>Latest Creations:</u></p>
+              <p><i>Sep 15, 2022</i></p> 
+              <p>Custom made Cthulhu with rollerskates and personalized t-shirt</p>
+                  <img id="new1" src="images/new.png" alt="Custom Made Cthulhu" width="70%">
+                  
+                  <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("new1");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>  
+                    <br><br><br><hr width="75%"><br>
+                    <a id="contact"></a>
+                    <p><i class="fa-solid fa-message"></i> Send me a message here:<br>
+                      <div class="container">
+                        <form action="https://formspree.io/f/xnqrpewl">
+                      
+                          <label for="name">Your Name:</label><br><br>
+                          <input type="text" id="name" name="name" placeholder="Your name.."><br><br>
+
+                          <label for="email">Your Email:</label><br><br>
+                          <input type="text" id="email" name="email" placeholder="Your email.."><br><br>
+
+                          <label for="subject">Your Message:</label><br><br>
+                          <textarea id="subject" name="" placeholder="Write something.." style="height:100px"></textarea><br><br>
+                      
+                          <input type="submit" name="submitbtn" value="Submit">
+                      
+                        </form>
+                        </div>
             </div>
+
           </div>
 <hr>
 <div id="disclaimer">
-  <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.  All images are copyright of Megan Gorham.  2022.</p>
+  <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.</p>
 </div>
 </body>
 </html>
