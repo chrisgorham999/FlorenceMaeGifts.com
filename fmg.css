@@ -313,6 +313,16 @@ a:hover {
 
   #example19:hover {opacity: 0.7;}
 
+
+  #example20 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #example20:hover {opacity: 0.7;}
+
+
   #new1 {
     border-radius: 5px;
     cursor: pointer;
