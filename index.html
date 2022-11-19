@@ -9,13 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="biosite.css" type="text/css" rel="stylesheet">
+    <link href="fmg.css" type="text/css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
+
+
+
+
     <div class="header">
         <img src="images/logo.png" width="60%" height="60%" alt="Florence Mae Gifts logo">
       </div>
@@ -225,6 +229,31 @@
                       modal.style.display = "none";
                     }
                     </script>
+
+                    <img id="example20" src="images/example20.png" alt="Custom Made Cthulhu with Roller Skates">
+
+                    <script>
+                      // Get the modal
+                      var modal = document.getElementById("myModal");
+
+                      // Get the image and insert it inside the modal - use its "alt" text as a caption
+                      var img = document.getElementById("example20");
+                      var modalImg = document.getElementById("img01");
+                      var captionText = document.getElementById("caption");
+                      img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                      }
+
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() { 
+                        modal.style.display = "none";
+                      }
+                      </script>
 
                 </div>
                 <div class="column">
@@ -446,9 +475,9 @@
               <p><i class="fa-regular fa-thumbs-up fa-fw page-margin-right"></i>Thanks for visiting!</p>
               
               <p><u>Latest Creations:</u></p>
-              <p><i>Sep 15, 2022</i></p> 
-              <p>Custom made Cthulhu with rollerskates and personalized t-shirt</p>
-                  <img id="new1" src="images/new.png" alt="Custom Made Cthulhu" width="70%">
+              <p><i>Nov 19, 2022</i></p> 
+              <p>Baby Santa Diaper Cover Set</p>
+              <img id="new1" src="images/new.png" alt="Baby Santa Diaper Cover Set" width="70%">
                   
                   <script>
                     // Get the modal
@@ -494,9 +523,10 @@
             </div>
 
           </div>
-<hr>
-<div id="disclaimer">
-  <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.</p>
-</div>
+          <hr>
+          <div id="disclaimer">
+            <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.</p>
+          </div>
+
 </body>
 </html>

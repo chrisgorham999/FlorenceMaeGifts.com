@@ -438,9 +438,10 @@ input[type=submit]:hover {
   background-color: lightblue;
 }
 
-.container {
-  padding: 10px;
-}
-
 .page-margin-right{
   margin-right:16px!important}
+
+#stuff-centered {
+  text-align: center;
+  float: center;
+}
