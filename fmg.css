@@ -332,6 +332,27 @@ a:hover {
   #new1:hover {opacity: 0.7;}
 
 
+  #new2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #new2:hover {opacity: 0.7;}
+
+
+  #new3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #new3:hover {opacity: 0.7;}
+
+
+
+
+
   /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */

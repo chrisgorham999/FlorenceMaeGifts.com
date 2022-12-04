@@ -76,9 +76,69 @@
               <p><i class="fa-regular fa-thumbs-up fa-fw page-margin-right"></i>Thanks for visiting!</p>
               
               <p><u>Latest Creations:</u></p>
+
+              <p><i>Dec 4, 2022</i></p> 
+              <p>Winnie the Pooh Inspired Baby Set</p>
+              <img id="new3" src="images/new3.jpeg" alt="Winnie the Pooh Inspired Baby Set" width="70%">
+                  
+                  <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("new3");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+
+                    <br><br><hr width="75%">
+
+              <p><i>Dec 3, 2022</i></p> 
+              <p>Dragonball Z Custom Order </p>
+              <img id="new2" src="images/new2.jpg" alt="Dragonball Z Kid Gohan Baby Hat Custom Order" width="70%">
+                  
+                  <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("new2");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+
+
+              <br><br><hr width="75%">
+
               <p><i>Nov 19, 2022</i></p> 
               <p>Baby Santa Diaper Cover Set</p>
-                  <img id="new1" src="images/new.jpeg" alt="Baby Santa Diaper Cover Set" width="70%">
+              <img id="new1" src="images/new.jpeg" alt="Baby Santa Diaper Cover Set" width="70%">
                   
                   <script>
                     // Get the modal
@@ -103,6 +163,8 @@
                     }
                     </script>  
                     <br><br><br><hr width="75%"><br>
+
+                    
                     <a id="contact"></a>
                     <p><i class="fa-solid fa-message"></i> Send me a message here:<br>
                       <div class="container">
@@ -117,7 +179,7 @@
                           <label for="subject">Your Message:</label><br><br>
                           <textarea id="subject" name="" placeholder="Write something.." style="height:100px"></textarea><br><br>
                       
-                          <input type="submit" name="submitbtn" value="Submit">
+                          <input type="submit" name="submitbtn" value="Submit"><br><br><br>
                       
                         </form>
                         </div>
