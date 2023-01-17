@@ -1,11 +1,11 @@
 /*
 ======================================
 ; Title: theme.js
-; Author: 
-; Date: 02 Jan 2023
+; Author: Professor Krasso (Bellevue University)
+; Date: 16 Jan 2023
 ; Modified By: Chris Gorham
-; Description: This code houses code for the light & dark themes
-; Sources Used: Web 330 HTML, CSS, and JavaScript Requirements Word Document
+; Description: This code houses JavaScript for the light & dark themes
+; Sources Used: Bellevue University Web Dev Web 330 HTML, CSS, and JavaScript Requirements Word Document
 ;=====================================
 */
 

@@ -4,7 +4,7 @@
 ; Author: Chris Gorham
 ; Date: 11 Jan 2023
 ; Description: This code establishes the styling for the entire site
-; Sources Used: W3 Schools Theme
+; Sources Used: W3 Schools CSS Template https://www.w3schools.com/css/css_templates.asp
 ;=====================================
 */
 
@@ -209,197 +209,15 @@ a:hover {
     }
   }
 
-  #example1 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+.examples {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-  #example1:hover {opacity: 0.7;}
-
-  #example2 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example2:hover {opacity: 0.7;}
-
-  #example3 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example3:hover {opacity: 0.7;}
-
-  #example4 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example4:hover {opacity: 0.7;}
-
-  #example5 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example5:hover {opacity: 0.7;}
-
-  #example6 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example6:hover {opacity: 0.7;}
-
-  #example7 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example7:hover {opacity: 0.7;}
-
-  #example8 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example8:hover {opacity: 0.7;}
-
-  #example9 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example9:hover {opacity: 0.7;}
-
-  #example10 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example10:hover {opacity: 0.7;}
-
-  #example11 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example11:hover {opacity: 0.7;}
-
-  #example12 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example12:hover {opacity: 0.7;}
-
-  #example13 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example13:hover {opacity: 0.7;}
-
-  #example14 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example14:hover {opacity: 0.7;}
-
-  #example15 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example15:hover {opacity: 0.7;}
-
-  #example16 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example16:hover {opacity: 0.7;}
-
-  #example17 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example17:hover {opacity: 0.7;}
-
-  #example18 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example18:hover {opacity: 0.7;}
-
-  #example19 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example19:hover {opacity: 0.7;}
-
-
-  #example20 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #example20:hover {opacity: 0.7;}
-
-
-  #new1 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #new1:hover {opacity: 0.7;}
-
-
-  #new2 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #new2:hover {opacity: 0.7;}
-
-
-  #new3 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #new3:hover {opacity: 0.7;}
-
-
-
-
+.examples:hover {
+  opacity: 0.7;
+}
 
   /* The Modal (background) */
 .modal {
