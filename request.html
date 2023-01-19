@@ -40,7 +40,7 @@
   <!-- Creates the icon and adds the onclick functionality for changing between themes-->
   <i onclick="toggleMode(this)" id="icon-mode" class="fa fa-toggle-off pull-right" style="font-size: 28px;"><span id="icon-text"></span></i><br><br>
 
-      <div class="header">
+  <div class="header">
         <table>
           <TR>
             <TD style="width:15%"><img src="images/flower1.png" width="80%" height="80%"></TD>
@@ -48,9 +48,9 @@
             <TD style="width:15%"><img src="images/flower2.png" width="80%" height="80%"></TD>
           </TR>
         </table>
-      </div>
+  </div>
 
-      <div class="topnav">
+  <div class="topnav">
         <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
         <a href="about.html"><i class="fa-solid fa-palette"></i> About The Artist</a>
         <a href="reviews.html"><i class="fa-solid fa-star"></i> Reviews</A>
@@ -59,159 +59,74 @@
         <a href="#contact" style="float:right"><i class="fa-solid fa-message"></i> Contact</a>
         <a href="https://www.instagram.com/florencemaegifts/" style="float:right" target="resource window"><i class="fa-brands fa-instagram"></i> Instagram</a>
         <a href="https://www.etsy.com/shop/florencemaegifts" style="float:right" target="resource window"><i class="fa-brands fa-etsy" alt="etsy"></i>  Etsy</a>
-        </div>
+  </div>
 
-        <div class="row">
+  <div class="row">
             <div class="leftcolumn" width="70%">
               <script src="https://www.cognitoforms.com/f/seamless.js" data-key="1AQQgH-YkECjnHI7fKBekg" data-form="1"></script>
           </div>
             
             
-            <div class="rightcolumn" width="30%">
-                                    <!-- The Modal -->
-                                    <div id="myModal" class="modal">
-                                      <span class="close">&times;</span>
-                  
-                                      <img class="modal-content" id="img01">
-                                      <div id="caption"></div>
-                                      </div>
+<div class="rightcolumn" width="30%">
+
+            <p><i class="fa-regular fa-thumbs-up fa-fw page-margin-right"></i>Thanks for visiting!</p>
+            
+            <p><u>Latest Creations:</u></p>
+
+            <p><i>January 14, 2023</i></p> 
+            <p>Dragonball Z Inspired Baby TRUNKS Beanie & Diaper Cover Set</p>
+            <img class="examples" id="new" src="images/new.jpeg" alt="Dragonball Z Inspired Baby TRUNKS Beanie & Diaper Cover Set" width="70%">
                 
-                                      <script>
-                                      // Get the modal
-                                      var modal = document.getElementById("myModal");
-                
-                                      // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                      var img = document.getElementById("example1");
-                                      var modalImg = document.getElementById("img01");
-                                      var captionText = document.getElementById("caption");
-                                      img.onclick = function(){
-                                        modal.style.display = "block";
-                                        modalImg.src = this.src;
-                                        captionText.innerHTML = this.alt;
-                                      }
-                
-                                      // Get the <span> element that closes the modal
-                                      var span = document.getElementsByClassName("close")[0];
-                
-                                      // When the user clicks on <span> (x), close the modal
-                                      span.onclick = function() { 
-                                        modal.style.display = "none";
-                                      }
-                                      </script>
-              <p><i class="fa-regular fa-thumbs-up fa-fw page-margin-right"></i>Thanks for visiting!</p>
-              
-              <p><u>Latest Creations:</u></p>
+                <script>
+                  // Get the modal
+                  var modal = document.getElementById("myModal");
 
-              <p><i>Dec 4, 2022</i></p> 
-              <p>Winnie the Pooh Inspired Baby Set</p>
-              <img id="new3" src="images/new3.jpeg" alt="Winnie the Pooh Inspired Baby Set" width="70%">
-                  
-                  <script>
-                    // Get the modal
-                    var modal = document.getElementById("myModal");
+                  // Get the image and insert it inside the modal - use its "alt" text as a caption
+                  var img = document.getElementById("new");
+                  var modalImg = document.getElementById("img01");
+                  var captionText = document.getElementById("caption");
+                  img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                  }
 
-                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                    var img = document.getElementById("new3");
-                    var modalImg = document.getElementById("img01");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function(){
-                      modal.style.display = "block";
-                      modalImg.src = this.src;
-                      captionText.innerHTML = this.alt;
-                    }
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName("close")[0];
 
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() { 
+                    modal.style.display = "none";
+                  }
+                  </script>
 
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() { 
-                      modal.style.display = "none";
-                    }
-                    </script>
+            <br><br><hr width="75%">
 
-                    <br><br><hr width="75%">
+                  <a id="contact"></a>
+                  <p><i class="fa-solid fa-message"></i> Send me a message here:<br>
+                    <div class="container">
+                      <form action="https://formspree.io/f/xnqrpewl">
+                    
+                        <label for="name">Your Name:</label><br><br>
+                        <input type="text" id="name" name="name" placeholder="Your name.."><br><br>
 
-              <p><i>Dec 3, 2022</i></p> 
-              <p>Dragonball Z Custom Order </p>
-              <img id="new2" src="images/new2.jpg" alt="Dragonball Z Kid Gohan Baby Hat Custom Order" width="70%">
-                  
-                  <script>
-                    // Get the modal
-                    var modal = document.getElementById("myModal");
+                        <label for="email">Your Email:</label><br><br>
+                        <input type="text" id="email" name="email" placeholder="Your email.."><br><br>
 
-                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                    var img = document.getElementById("new2");
-                    var modalImg = document.getElementById("img01");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function(){
-                      modal.style.display = "block";
-                      modalImg.src = this.src;
-                      captionText.innerHTML = this.alt;
-                    }
-
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() { 
-                      modal.style.display = "none";
-                    }
-                    </script>
+                        <label for="subject">Your Message:</label><br><br>
+                        <textarea id="subject" name="" placeholder="Write something.." style="height:100px"></textarea><br><br>
+                    
+                        <input type="submit" name="submitbtn" value="Submit"><br><br><br>
+                    
+                      </form>
+                      </div>
+</div>
 
 
-              <br><br><hr width="75%">
+        <hr>
 
-              <p><i>Nov 19, 2022</i></p> 
-              <p>Baby Santa Diaper Cover Set</p>
-              <img id="new1" src="images/new.jpeg" alt="Baby Santa Diaper Cover Set" width="70%">
-                  
-                  <script>
-                    // Get the modal
-                    var modal = document.getElementById("myModal");
-
-                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                    var img = document.getElementById("new1");
-                    var modalImg = document.getElementById("img01");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function(){
-                      modal.style.display = "block";
-                      modalImg.src = this.src;
-                      captionText.innerHTML = this.alt;
-                    }
-
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() { 
-                      modal.style.display = "none";
-                    }
-                    </script>  
-                    <br><br><br><hr width="75%"><br>
-
-                    <a id="contact"></a>
-                    <p><i class="fa-solid fa-message"></i> Send me a message here:<br>
-                      <div class="container">
-                        <form action="https://formspree.io/f/xnqrpewl">
-                      
-                          <label for="name">Your Name:</label><br><br>
-                          <input type="text" id="name" name="name" placeholder="Your name.."><br><br>
-
-                          <label for="email">Your Email:</label><br><br>
-                          <input type="text" id="email" name="email" placeholder="Your email.."><br><br>
-
-                          <label for="subject">Your Message:</label><br><br>
-                          <textarea id="subject" name="" placeholder="Write something.." style="height:100px"></textarea><br><br>
-                      
-                          <input type="submit" name="submitbtn" value="Submit"><br><br><br>
-                      
-                        </form>
-                        </div>
-            </div>
-
-          </div>
-<hr>
 <div id="disclaimer">
+
   <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.</p>
 </div>
 
