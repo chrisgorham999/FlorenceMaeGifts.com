@@ -31,6 +31,8 @@
 
     <!---The JavaScript source doe for the theme functions setDefaultTheme and setSelectedTheme-->
     <script src="theme.js"></script>
+    <!---The JavaScript source code for the include HTML function-->
+    <script src="includeHTML.js"></script>
 
 </head>
 
@@ -61,81 +63,16 @@
         </div>
 
         <div class="row">
-            <div class="leftcolumn" width="70%">
-                  <center><img src="images/subject.jpeg" width="30%" height="30%" alt="Florence Mae Gifts creator - Megan Gorham, Portrait"></center>
-                  <p>I was born and raised in Salisbury, Maryland. I'm married and a mother to a 4-year-old daughter and an infant Son. Growing up, I was a huge fan of Japanese culture, specifically anime and manga. I had many pen pals in Japan that I would exchange letters and collectible items with while also learning about Japanese customs. My family has had a long history of seamstresses, knitters, and crocheters, so I was expertly taught at a young age on how to do multiple styles of knitting and crochet. This started a love affair that combined my appreciation of Japanese culture with my love for creating things through crochet. This hobby eventually turned into a passion of creating high quality, hand-made, amigurumi dolls.</p>
 
-                  <p>Amigurumi is the Japanese word which describes small knitted or crocheted stuffed toys, often in the shape of characters, animals, mini foods, household objects and scenery. It comes from the two root words ami, meaning crocheted or knitted, and nuigurumi, which means stuffed doll. Since their inception, these handmade toys have become synonymous with the whimsical subculture many already associate with Japan, a movement which has spawned thousands of imaginative works. My dolls are inspired by characters in Japanese anime, Pokémon, Star Wars, Disney movies, and much more. I've been making amigurumi dolls for friends and family for years and have now expanded to sell on sites like <a href="https://www.etsy.com/shop/florencemaegifts" target="resource window">Etsy</a> and Facebook Marketplace as well as attending local fairs on the Eastern Shore of Maryland, Virginia, and Delaware.</p>
-                  
-                  <p>My goal is to continue making amigurumi dolls while also expanding to instructional YouTube videos and selling my custom, high quality patterns so that others can enjoy my designs.</p>
-          </div>
+          <div w3-include-html="aboutleftcolumn.html" class="leftcolumn"></div>
+                          
+          <div w3-include-html="rightcolumn.html" class="rightcolumn"></div>
+        
+          <div w3-include-html="disclaimernote.html" class="disclaimer"></div>  
+        
+        </div>
             
-            
-<div class="rightcolumn" width="30%">
 
-            <p><i class="fa-regular fa-thumbs-up fa-fw page-margin-right"></i>Thanks for visiting!</p>
-            
-            <p><u>Latest Creations:</u></p>
-
-            <p><i>January 14, 2023</i></p> 
-            <p>Dragonball Z Inspired Baby TRUNKS Beanie & Diaper Cover Set</p>
-            <img class="examples" id="new" src="images/new.jpeg" alt="Dragonball Z Inspired Baby TRUNKS Beanie & Diaper Cover Set" width="70%">
-                
-                <script>
-                  // Get the modal
-                  var modal = document.getElementById("myModal");
-
-                  // Get the image and insert it inside the modal - use its "alt" text as a caption
-                  var img = document.getElementById("new");
-                  var modalImg = document.getElementById("img01");
-                  var captionText = document.getElementById("caption");
-                  img.onclick = function(){
-                    modal.style.display = "block";
-                    modalImg.src = this.src;
-                    captionText.innerHTML = this.alt;
-                  }
-
-                  // Get the <span> element that closes the modal
-                  var span = document.getElementsByClassName("close")[0];
-
-                  // When the user clicks on <span> (x), close the modal
-                  span.onclick = function() { 
-                    modal.style.display = "none";
-                  }
-                  </script>
-
-            <br><br><hr width="75%">
-
-                  <a id="contact"></a><br>
-                  <div><i class="fa-solid fa-message"></i> Send me a message here:<br><br>
-                    <div class="container">
-                      <form action="https://formspree.io/f/xnqrpewl">
-                    
-                        <label for="name">Your Name:</label><br><br>
-                        <input type="text" id="name" name="name" placeholder="Your name.."><br><br>
-
-                        <label for="email">Your Email:</label><br><br>
-                        <input type="text" id="email" name="email" placeholder="Your email.."><br><br>
-
-                        <label for="subject">Your Message:</label><br><br>
-                        <textarea id="subject" name="" placeholder="Write something.." style="height:100px"></textarea><br><br>
-                    
-                        <input type="submit" name="submitbtn" value="Submit"><br><br><br>
-                    
-                      </form>
-                      </div></div></div>
-</div>
-
-
-      
-
-
-<div id="disclaimer">
-
-  <hr>
-
-  <p>Please refer to my <a href="disclaimers.html">disclaimers</a> page for all licensing and legal information.</p>
-</div>
 
 </body>
 
@@ -171,6 +108,9 @@
       iconMode.value = `fa ${localStorage.getItem("iconMode")} pull-right`;
       document.getElementById("icon-text").innerHTML = localStorage.getItem("iconText");
   }
+
+// allows for the import of the html files
+includeHTML();
 
 </script>
 

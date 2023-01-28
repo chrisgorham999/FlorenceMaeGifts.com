@@ -84,7 +84,7 @@ a:hover {
     color: var(--link-hover);
 }
 
-#disclaimer {
+.disclaimer {
     text-align: center;
 }
 
