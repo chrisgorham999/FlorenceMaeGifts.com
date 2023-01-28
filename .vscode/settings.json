@@ -6,6 +6,7 @@
         "indexleftcolumn",
         "requestleftcolumn",
         "reviewsleftcolumn",
-        "rightcolumn"
+        "rightcolumn",
+        "topnav"
     ]
 }

@@ -42,38 +42,25 @@
 <!-- Creates the icon and adds the onclick functionality for changing between themes-->
 <i onclick="toggleMode(this)" id="icon-mode" class="fa fa-toggle-off pull-right" style="font-size: 20px;"><span id="icon-text" class="toggle"></span></i><br><br>
 
-      <div class="header">
-        <table>
-          <TR>
-            <TD style="width:15%"><img src="images/flower1.png" width="80%" height="80%"></TD>
-            <TD style="width:30%"><h1>Florence Mae</h1><hr width="200"><h2>GIFTS</h2></TD>
-            <TD style="width:15%"><img src="images/flower2.png" width="80%" height="80%"></TD>
-          </TR>
-        </table>
-      </div>
+<div w3-include-html="header.html" class="header"></div>
 
-      <div class="topnav">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="about.html"><i class="fa-solid fa-palette"></i> About The Artist</a>
-        <a href="reviews.html"><i class="fa-solid fa-star"></i> Reviews</A>
-        <a href="request.html"><i class="fa-solid fa-keyboard"></i> Request Custom Piece</a>
-        <a href="disclaimers.html"><i class="fa-solid fa-scale-balanced"></i> Disclaimers</a>
-        <a href="#contact" style="float:right"><i class="fa-solid fa-message"></i> Contact</a>
-        <a href="https://www.instagram.com/florencemaegifts/" style="float:right" target="resource window"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        <a href="https://www.etsy.com/shop/florencemaegifts" style="float:right" target="resource window"><i class="fa-brands fa-etsy" alt="etsy"></i>  Etsy</a>
-        </div>
+<div w3-include-html="topnav.html" class="topnav"></div>
 
         <div class="row">
 
           <div w3-include-html="disclaimersleftcolumn.html" class="leftcolumn"></div>
                           
           <div w3-include-html="rightcolumn.html" class="rightcolumn"></div>
-        
+
+          <!---Closes all other divs and allows the disclaimer note to be the Footer--> 
+          </div>
+          
+          <!---Footer-->
           <div w3-include-html="disclaimernote.html" class="disclaimer"></div>  
         
-        </div>
-              
         
+              
+
 <script>
   // sets a default theme; this code needs to be first
   setDefaultTheme();
