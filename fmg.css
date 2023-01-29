@@ -16,6 +16,7 @@ body.light-theme {
   --link-color: #FE6666;
   --visited-link-color: #FE6666;
   --link-hover: #FF6699;
+  transition: 0.5s;
 
   }
   
@@ -27,7 +28,7 @@ body.light-theme {
   --link-color: #FE6666;
   --visited-link-color: #FE6666;
   --link-hover: #FF6699;
-
+  transition: 0.3s;
   }
 
 body {
