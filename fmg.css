@@ -66,6 +66,26 @@ h3 {
     font-size: 72px;
 }
 
+.footer {
+  overflow: hidden;
+  background-color: #fecac4;
+  font-family: 'Lora', serif;
+  color: #000;
+  padding: 16px;
+}
+
+.footer a {
+  padding: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer a:visited {
+  padding: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
 .toggle {
   font-family: 'Lora', serif;
     font: size 16px;
