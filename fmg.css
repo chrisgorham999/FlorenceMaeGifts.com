@@ -384,3 +384,8 @@ input[type=submit]:hover {
   float:left;
 }
 
+/* Styles the links in the footer disclaimer note */
+a.disclaimer-links:link {color: black};
+a.disclaimer-links:visited {color: black;}
+a.disclaimer-links:hover {color: #fe666f;}
+
