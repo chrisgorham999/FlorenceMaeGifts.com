@@ -133,6 +133,11 @@ a:hover {
     .hidden-mobile {
       display: none;
     }
+
+    .leftcolumn {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
   
 
