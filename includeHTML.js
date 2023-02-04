@@ -1,3 +1,15 @@
+/*
+======================================
+; Title: includeHTML.js
+; Author: W3 Schools
+; Date Created: 28 Jan 2023
+; Last Updated: 04 Feb 2023
+; Modified By: Chris Gorham
+; Description: This code houses JavaScript for the light & dark themes
+; Sources Used: W3 Schools How TO - Include HTML, URL: https://www.w3schools.com/howto/howto_html_include.asp
+;=====================================
+*/
+
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
