@@ -161,7 +161,11 @@ a:hover {
       flex: 100%;
       max-width: 100%;
     }
+    .hidden-mobile {
+      display:none;
+    }
   }
+
   
   /* Style the header */
   .header {
@@ -380,7 +384,7 @@ input[type=submit]:hover {
   float:left;
 }
 
-/* Styles the links in the footer disclaimer note */
+/* Styles the links and icons in the footer */
 a.disclaimer-links:link {color: black};
 a.disclaimer-links:visited {color: black;}
 a.disclaimer-links:hover {color: #fe666f;}
