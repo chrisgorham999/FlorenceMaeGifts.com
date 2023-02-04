@@ -153,6 +153,10 @@ a:hover {
       flex: 50%;
       max-width: 50%;
     }
+    
+    .hidden-mobile {
+      display:none;
+    }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -160,9 +164,6 @@ a:hover {
     .column {
       flex: 100%;
       max-width: 100%;
-    }
-    .hidden-mobile {
-      display:none;
     }
   }
 
